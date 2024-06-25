@@ -1,38 +1,330 @@
-.App {
-  text-align: center;
+body {
+    font-family: "Fraunces", serif;
+    background-color: #FFFFFF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-section {
+    height: 730px;
+    background: #24053E;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-section {
+    display: flex;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-section img {
+    width: 95.76px;
+    height: 24.61px;
+    margin: 50px 0px 0px 70px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-section h4 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    border-bottom-style: solid ;
+    border-bottom-width: 3.1px;
+    border-bottom-color: #44FFA1;
+    width: fit-content;
+    margin: 50px 70px 0px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-section h4:hover {
+    color: #44FFA1;
 }
+
+.call-to-action {
+    display: flex;
+    margin-top: 70px;
+}
+
+.patternLeft img {
+    position: relative;
+    width: 270.29px;
+    height: 215.1px;
+    top: -15px;
+    left: -107px;
+}
+
+.patternRight img {
+    position: absolute;
+    top: 300px;
+    left: 1175px;
+}
+
+.headingAndButton {
+    width: 500px;
+    height: 258px;
+    margin-left: 160px;
+}
+
+.headingAndButton h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.headingAndButton span {
+    padding-bottom: 2px;
+    border-bottom-style: solid ;
+    border-bottom-width: 3.1px;
+    border-bottom-color: #44FFA1;
+}
+
+.headingAndButton button {
+    border: none;
+    width: 161px;
+    height: 61px;
+    background-color: #44FFA1;
+    color: #24053E;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 155px;
+}
+
+.heroImg {
+    width: 650px;
+    height: auto;
+    position: absolute;
+    top: 500px;
+    left: 380px;
+}
+
+.product-description {
+    display: flex;
+    width: 1114px;
+    margin: auto;
+    margin-top: 200px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.product-description div {
+    width: 354px;
+}
+
+.numbering {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #24053E;
+    border: solid;
+    border-width: 1.5px;
+    border-color: #24053E;
+    border-radius: 50%;
+    align-content: center;
+    margin: auto;
+}
+
+.description-heading {
+    font-size: 32px;
+    font-weight: 600;
+    color: #24053E;
+}
+
+.description {
+    font-size: 18px;
+    color: #24053E;
+    font-family: "Manrope", sans-serif;
+}
+
+.founder img {
+    width: 477px;
+    height: 477px;
+    margin-left: 110px;
+    margin-top: 170px;
+}
+
+.founder-intro {
+    position: absolute;
+    top: 1550px;
+    left: 500px;
+    width: 730px;
+    height: 413px;
+    background-color: #24053E;
+}
+
+.founder-intro h1 {
+    font-size: 56px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-top: 35px;
+    margin-left: 50px;
+}
+
+.founder-intro p {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.founder-intro button {
+    width: 190px;
+    height: 61px;
+    background-color: #44FFA1;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #24053E;
+    border: none;
+    margin: 20px 0px 0px 50px; 
+}
+
+.patternThree {
+    position: absolute;
+    top: 1600px;
+    left: 700px;
+    width: 173px;
+    height: 137px;
+}
+
+.footer {
+    margin-top: 500px;
+    margin-left: 600px;
+    width: 116px;
+    height: 102.22px;
+}
+
+.footer img {
+    width: 95.76px;
+    height: 24.61px;
+    margin-left: 10px;
+
+}
+
+.social-links {
+    display: flex;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:480px) {
+    .header-section {
+        height: 481.71px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .patternLeft,
+    .patternRight,
+    .patternThree {
+        visibility: hidden;
+    }
+
+    .logo-section img {
+        margin-left: 20px;
+        width: 95.76px;
+        height: 34.61;
+    }
+
+    .logo-section h4 {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        margin-right: 20px;
+    }
+                                                                
+    .headingAndButton h1 {
+        width: 343px;
+        font-size: 35px;
+        font-weight: 600;
+        margin-top: -10px;
+        margin-left: -400px;
+    }
+
+    .headingAndButton button {
+        width: 133px;
+        height: 55px;
+        margin-left: -300px;
+        font-size: 16px;
+    }
+
+    .heroImg {
+        width: 320px;
+        height: 184px;
+        margin-left: -300px;
+        margin-top: -120px;
+    }
+
+    .product-description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    .product-description div {
+        width: 343px;
+        height: 206px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+
+    .numbering {
+        font-size: 20px;
+    }
+
+    .description-heading {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .founder img {
+        width: 281px;
+        height: 281px;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+
+    .founder-intro {
+        width: 343px;
+        height: 375px;
+        margin-left: -465px;
+        margin-top: 80px;
+    }
+
+    .founder-intro h1 {
+        font-size: 32px;
+        margin-top: -5px;
+        margin-left: 30px;
+    }
+
+    .founder-intro p {
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+    .founder-intro button {
+        width: 172px;
+        height: 55px;
+        font-size: 16px;
+        margin-left: 80px;
+    }
+
+    .footer .dark-logo {
+        width: 95.76px;
+        height: 24.61px;
+        margin-left: -442px;
+        margin-top: -60px;
+    }
+
+    .social-links {
+        width: 116px;
+        height: 20px;
+        margin-left: -460px;
+    }
+
+}
+
